@@ -1,0 +1,48 @@
+<html>
+<link rel="stylesheet" href="../style.css">
+<body>
+<div class="kiro-brandbar"><img src="../kiro-logo.jpg" alt="Kiro Games Store logo"><div><div class="kiro-brandname">KIRO GAMES STORE</div><div class="kiro-brandtag">PlayStation Support • Exploit Host • Accessories &amp; Maintenance</div></div></div>
+
+<h1 style="margin-top: 17px;">Loading Payload... Please Wait !!!</h1>
+<hr><br><br><br><br><br><br><br><br><br><br><br><h1 style="font-size:30px;">This will take a time between 20 and 40 seconds ...</h1>
+<div style="opacity: 0">
+<p><i>Italic text</i></p>
+<table>
+<tr>
+<th>H1</th>
+<th>H2</th>
+<th>H3</th>
+</tr>
+<tr>
+<td>text</td>
+<td><input value="text"/></td>
+<td><button>text</button></td>
+</tr>
+</table>
+</div>
+<script>
+function loadScript(path)
+{
+    var xhr = new XMLHttpRequest(path);
+    xhr.open("GET", path, false);
+    xhr.send('');
+    return xhr.responseText;
+}
+
+setTimeout(function(){
+eval.call(window, loadScript('netcat.js')
++loadScript('exploit.js')
++loadScript('malloc.js')
++loadScript('rop2.js')
++loadScript('syscalls.js')
++loadScript('syscalls2.js')
++loadScript('payload.js')
++loadScript('relocator.js')
++loadScript('frontend.js'));
+document.getElementById('q').innerHTML = 'Some other text';
+}, 50);
+</script>
+
+<footer class="kiro-contact"><div class="address">المنشية - ش أحمد عرابي - بجوار صيدلية إسلام فتحي - أمام كافيه ونس</div><div>اتصل بنا: <a href="tel:01095055336">01095055336</a> <a href="tel:01225772035">01225772035</a></div><div><a href="https://www.facebook.com/Kiro.Games.Store/" target="_blank" rel="noopener">Facebook: Kiro Games Store</a></div></footer>
+</body>
+</html>
